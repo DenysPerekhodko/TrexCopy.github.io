@@ -116,7 +116,7 @@ $(document).ready(function() {
             $("#game-over").hide();
             $("#player").css({ bottom: "0%" });
             $("#wall").css({ right: "0%" });
-            wallSpeed = 2; 
+            wallSpeed = 15; 
             score = 0;
             $("#score").text("Score: " + score);
             isJumping = false;
