@@ -70,7 +70,7 @@ $(document).ready(function() {
         const nearestY = Math.max(rectPos.y, Math.min(circlePos.y, rectPos.y + rectHeight));
         const deltaX = circlePos.x - nearestX;
         const deltaY = circlePos.y - nearestY;
-        return (deltaX * deltaX + deltaY * deltaY) <= (circleRadius * circleRadius);
+        return (deltaX * deltaX + deltaY * deltaY) < (circleRadius * circleRadius);
     }
 
     function updateWallPosition() {
